@@ -115,7 +115,6 @@ main {
 .secao-conteudo {
     text-align: center;
     align-items: center;
-    
     margin: 5%;
  
 }
@@ -150,9 +149,7 @@ main {
     border: 1px solid var(--border-color);
     border-radius: 8px;
     padding: 1.5rem;
-    flex: 300px;
     max-width: 360px;
-    
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
@@ -189,8 +186,7 @@ footer {
     background-color: var(--header-bg);
     color: #cbd5e1;
     text-align: center;
-    padding: 3%;
-    margin-top: auto;
+    padding: 2%;
 }
 
 footer h6 {
@@ -204,7 +200,7 @@ footer h6 {
     padding: 5%;
     display: flex;
     gap: 2%;
- 
+
     flex-wrap: wrap;
 }
 
@@ -225,7 +221,6 @@ footer h6 {
 .info-adicional ul{
     display: flex;
     flex-direction: column;
-    
     gap:30px;
 
 }
@@ -250,12 +245,12 @@ footer h6 {
     border: 1px solid #cbd5e1;
     border-radius: 6px;
     font-family: inherit;
-    font-size: 0.95rem;
+    
 }
 
 
 .form-contato button {
-    margin-top: 0.5rem;
+    margin: 1rem;
     align-self: flex-start;
 }
 
