@@ -5,88 +5,156 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abelhas Nativas - Sobre as Espécies</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <nav class="nav-container">
-            <figure class="logo">
-               <img src="img/logo.png" >
-            </figure>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sobre.html" class="active">Sobre</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark nav-custom">
+            <div class="container">
+                <a class="navbar-brand logo" href="index.html">
+                    <img src="img/logo.png" alt="Logo Abelhas Nativas">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar" aria-controls="menuNavbar" aria-expanded="false" aria-label="Alternar navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuNavbar">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="sobre.html">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <article>
-                <h1>Conheça Nossas Espécies</h1>
-                <p class="texto-base">
+        <section class="hero py-5">
+            <article class="container text-center">
+                <h1 class="titulo mb-3">Conheça Nossas Espécies</h1>
+                <p class="texto-base mx-auto">
                     A rica biodiversidade brasileira abriga abelhas sem ferrão com os mais variados tamanhos, cores, temperamentos e arquiteturas de ninhos. De espécies minúsculas e dóceis a colônias populosas e grandes produtoras de mel, conhecer cada espécie é o primeiro passo para o manejo correto.
                 </p>
             </article>
         </section>
 
-        <section class="secao-conteudo">
-            <h2 class="subtitulo">Principais Espécies Nativas</h2>
-            <p class="texto-intro">Descubra as características e os nomes científicos das espécies mais criadas em nossa região.</p>
+        <section class="container my-5">
+            <h2 class="subtitulo text-center mb-3">Principais Espécies Nativas</h2>
+            <p class="texto-intro text-center mb-5 mx-auto">Descubra as características e os nomes científicos das espécies mais criadas em nossa região.</p>
 
-            <div class="cards-wrapper">
-                <ul class="lista-cards">
-                    <li class="card">
-                        <figure class="card-img">
-                            <img src="img/jatai.png" alt="Abelha Jataí">
-                        </figure>
-                        <h3>Jataí</h3>
-                        <p class="sub-card"><em>Tetragonisca angustula</em></p>
-                        <p class="texto-base">Muito rústica, dócil e adaptável. Excelente para quem está iniciando.</p>
-                    </li>
-                    <li class="card">
-                        <figure class="card-img">
-                            <img src="img/mandacaia.png" alt="Abelha Mandaçaia">
-                        </figure>
-                        <h3>Mandaçaia</h3>
-                        <p class="sub-card"><em>Melipona quadrifasciata</em></p>
-                        <p class="texto-base">Porte maior, com listras amarelas marcantes e mel denso e saboroso.</p>
-                    </li>
-                    <li class="card">
-                        <figure class="card-img">
-                            <img src="img/tubuna.png" alt="Abelha Tubuna">
-                        </figure>
-                        <h3>Tubuna</h3>
-                        <p class="sub-card"><em>Scaptotrigona bipunctata</em></p>
-                        <p class="texto-base">Colônias populosas e ativas, grandes produtoras de mel e própolis.</p>
-                    </li>
-                    <li class="card">
-                        <figure class="card-img">
-                            <img src="img/mirim.png" alt="Abelha Mirim">
-                        </figure>
-                        <h3>Mirim</h3>
-                        <p class="sub-card"><em>Plebeia droryana</em></p>
-                        <p class="texto-base">Pequena, mansa e com entrada do ninho delicadamente desenhada em cera.</p>
-                    </li>
-                    <li class="card">
-                        <figure class="card-img">
-                            <img src="img/bugia.png" alt="Abelha Bugia">
-                        </figure>
-                        <h3>Bugia</h3>
-                        <p class="sub-card"><em>Melipona mondury</em></p>
-                        <p class="texto-base">Espécie nobre da Mata Atlântica, produtora de mel suave e muito apreciado.</p>
-                    </li>
-                </ul>
+            <div class="row g-4 justify-content-center">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 custom-card">
+                        <img src="img/jatai.png" class="card-img-top card-img-fit" alt="Abelha Jataí">
+                        <div class="card-body">
+                            <h3 class="h5 card-title">Jataí</h3>
+                            <p class="text-muted fst-italic mb-2">Tetragonisca angustula</p>
+                            <p class="card-text">Muito rústica, dócil e adaptável. Excelente para quem está iniciando.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 custom-card">
+                        <img src="img/mandacaia.png" class="card-img-top card-img-fit" alt="Abelha Mandaçaia">
+                        <div class="card-body">
+                            <h3 class="h5 card-title">Mandaçaia</h3>
+                            <p class="text-muted fst-italic mb-2">Melipona quadrifasciata</p>
+                            <p class="card-text">Porte maior, com listras amarelas marcantes e mel denso e saboroso.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 custom-card">
+                        <img src="img/tubuna.png" class="card-img-top card-img-fit" alt="Abelha Tubuna">
+                        <div class="card-body">
+                            <h3 class="h5 card-title">Tubuna</h3>
+                            <p class="text-muted fst-italic mb-2">Scaptotrigona bipunctata</p>
+                            <p class="card-text">Colônias populosas e ativas, grandes produtoras de mel e própolis.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 custom-card">
+                        <img src="img/mirim.png" class="card-img-top card-img-fit" alt="Abelha Mirim">
+                        <div class="card-body">
+                            <h3 class="h5 card-title">Mirim</h3>
+                            <p class="text-muted fst-italic mb-2">Plebeia droryana</p>
+                            <p class="card-text">Pequena, mansa e com entrada do ninho delicadamente desenhada em cera.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 custom-card">
+                        <img src="img/bugia.png" class="card-img-top card-img-fit" alt="Abelha Bugia">
+                        <div class="card-body">
+                            <h3 class="h5 card-title">Bugia</h3>
+                            <p class="text-muted fst-italic mb-2">Melipona mondury</p>
+                            <p class="card-text">Espécie nobre da Mata Atlântica, produtora de mel suave e muito apreciado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container my-5 py-3">
+            <h2 class="subtitulo text-center mb-4">Dúvidas Frequentes sobre o Manejo</h2>
+            <div class="accordion accordion-custom mx-auto" id="accordionDuvidas">
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="cabecalhoUm">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#colapsoUm" aria-expanded="true" aria-controls="colapsoUm">
+                            As abelhas sem ferrão oferecem algum perigo para animais ou crianças?
+                        </button>
+                    </h3>
+                    <div id="colapsoUm" class="accordion-collapse collapse show" aria-labelledby="cabecalhoUm" data-bs-parent="#accordionDuvidas">
+                        <div class="accordion-body">
+                            Nenhum perigo. Como possuem o ferrão atrofiado, não picam. Espécies como a Jataí e a Mandaçaia são totalmente pacíficas e podem conviver perto de animais de estimação e residências.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="cabecalhoDois">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#colapsoDois" aria-expanded="false" aria-controls="colapsoDois">
+                            Qual espaço é necessário para começar a criar?
+                        </button>
+                    </h3>
+                    <div id="colapsoDois" class="accordion-collapse collapse" aria-labelledby="cabecalhoDois" data-bs-parent="#accordionDuvidas">
+                        <div class="accordion-body">
+                            Uma pequena varanda, quintal ou suporte de parede protegido do sol forte e da chuva direta já é suficiente para instalar uma caixa racional.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="cabecalhoTres">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#colapsoTres" aria-expanded="false" aria-controls="colapsoTres">
+                            Como é feita a colheita do mel?
+                        </button>
+                    </h3>
+                    <div id="colapsoTres" class="accordion-collapse collapse" aria-labelledby="cabecalhoTres" data-bs-parent="#accordionDuvidas">
+                        <div class="accordion-body">
+                            A colheita é feita utilizando seringas esterilizadas ou sugadores próprios através da melgueira superior da caixa racional, mantendo o ninho intacto e seguro.
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <h6>Desenvolvido por Davi Ribeiro André</h6>
+    <footer class="text-center py-3 mt-auto">
+        <div class="container">
+            <h6 class="mb-0">Desenvolvido por Davi Ribeiro André</h6>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
